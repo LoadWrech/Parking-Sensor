@@ -117,9 +117,12 @@ void loop() {
             light(L_GREEN);
 
             tone(buzzerPin, TONE);
-            .
-            .
-            .
+          	delay(S1_P);
+          	noTone(buzzerPin);
+          
+            lcd.clear();
+            lcd.setCursor(0, 0);
+            lcd.write("Distanza: ");
         }
 
         // Spegnimento dispositivo
